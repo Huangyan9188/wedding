@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我们结婚啦!</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href='http://res.188xi.com/static/css/188/4/style_23.css?v=20151089' rel='stylesheet' type='text/css' />
+<link href="http://cdn.staticfile.org/photoswipe/3.0.5/photoswipe.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+<script src="http://cdn.staticfile.org/swipe/1.0/swipe.min.js"></script>
+
+<script src="http://cdn.staticfile.org/klass/1.4.0/klass.min.js"></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/photoswipe/3.0.5/code.photoswipe.jquery.min.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+<div class="viewport" style="position: relative;overflow: hidden;">
+<div class="main">
+
+
+     
+<div class="marry_title"></div>
+     
+
+<div class="avatar" style="background: url('1.jpg') no-repeat;background-size: 265px auto;background-position-x: 25px;background-position-y: 10px;">
+<div class="avatar_in"></div>
+        </div>
+        
+<div class="info_area">
+<div class="name_box">
+<div class="name"><label>黄严</label> <span class="love"></span> <label>石佳</label></div>
+</div>
+<div class="marry_title02"></div>
+
+<ul class="ul_item">
+<li><i></i>2016-02-23 12:00</li><li><i></i>正月十六 星期三</li><li><i></i><a href="http://api.map.baidu.com/marker?location=39.927141,116.41236&title=南京大饭店&content=南京大饭店&output=html">地点：乌兰察布市盟宾馆</a></li><li><i></i><a href="tel:18963685498">新郎：黄严</a></li><li><i></i><a href="tel:18963685498">新娘：石佳</a></li></ul><div class="split_box02"></div><div class="split_box"></div>
+</div>
+<div class="tab_img_list" id="tab_img_list" ><li>
+<a href="2.jpg"><img data-original="2.jpg" class="lazy_img" /></a>
+</li><li>
+<a href="3.jpg"><img data-original="3.jpg" class="lazy_img" /></a>
+</li><li>
+<a href="4.jpg"><img data-original="4.jpg" class="lazy_img" /></a>
+</li></li>
+<a href="5.jpg"><img data-original="5.jpg" class="lazy_img" /></a>
+</li></div><div class="word_box">
+<span>从相遇的那一刻，每一天，路不再是路，而是相伴；从相知的那一瞬，每一秒，生活不再是生活，而是两个个体的融合！今天，我们要结婚了，希望能与您一同分享这爱的美好旅程。</span>
+
+</div>
+<div class="countdown"> <i></i>距婚礼还有：<label id="day_num">-40</label>天</div>
+<div class="ul_bottom">
+<ul class="nav_bottom"><li><a href="/index.php?mod=3&ac=wreply&action=show&pid=10161" class="zf" ><span>祝福</span></a></li>
+<li><a href="javascript:;" onclick="javascript:show(0);window.scrollTo(0, -1);" class="share" ><span>分享</span></a></li>
+<li><a href="http://api.map.baidu.com/marker?location=39.927141,116.41236&title=南京大饭店&content=南京大饭店&output=html"  class="fy"><span>导航</span></a></li>
+</ul>
+</div>
+
+<div class="split_box"></div>
+
+</div>
+
+
+</div>
+
+<style type="text/css">
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+}
+.overlay_ul{
+height:100%;
+max-width:640px;
+padding:0 5px;
+position:absolute;
+z-index:500;
+left:0;
+right:0;
+bottom:0;
+top:0;
+margin:auto;
+background:rgba(0,0,0,0.3);
+display:none;
+overflow:hidden;
+}
+.overlay_ul.on{
+display:block;
+}
+.overlay_ul>*{
+position:absolute;
+bottom:100%;
+padding:20px;
+-webkit-box-sizing:border-box;
+border-radius:5px 5px 0 0;
+}
+.overlay_ul>*:after{
+content:"×";
+font-size:20px;
+color:#fff;
+display:inline-block;
+width:25px;
+height:25px;
+border-radius:25px;
+background-color:#ccc;
+border:2px solid #fff;
+position: absolute;
+right:-15px;
+top:0px;
+text-align:center;
+line-height:23px;
+pointer-events:none;
+}
+.overlay_ul>li.on{
+display:block;
+height:250px;
+bottom:0;
+left:10px;
+right:15px;
+z-index:600;
+margin:auto;
+background:#fff;
+-webkit-animation:"slide_up" .5s ease-out 0 1 alternate;
+}
+@-webkit-keyframes "slide_up"{
+0%{
+-webkit-transform:translate3d(0, 100%, 0);
+}
+100%{
+-webkit-transform:translate3d(0, 0, 0);
+}
+}
+.overlay_ul table td{
+height:45px;
+vertical-align: middle;
+}
+.overlay_ul input{
+padding:8px 3px;
+width:100%;
+-webkit-box-sizing:border-box;
+border:1px solid #aaa;
+border-radius:3px;
+}
+.overlay_ul textarea{
+padding:3px;
+width:100%;
+-webkit-box-sizing:border-box;
+border:1px solid #aaa;
+border-radius:3px;
+}
+.overlay_ul li:last-child{
+height:100%!important;
+right:-15px;
+left:0;
+background-color:rgba(62,78,78,0.7);
+}
+.overlay_ul table label{
+margin:auto;
+display:block;
+width:100%;
+line-height: 30px;
+background:#CC9999;
+border-radius:15px;
+text-align:center;
+color:#fff;
+font-size:14px;
+}
+.btns_1{
+text-align:center;
+line-height:35px;
+}
+.btns_1 a{
+display:inline-block;
+width:80px;
+height:35px;
+line-height:35px;
+color:#fff;
+font-size:14px;
+border-radius:5px;
+background: #CC9999;
+}
+</style>
+<ul id="overlay_ul" class="overlay_ul">
+<li style="text-align:right;height:100%!important;right:-15px;left:0px;background-color:rgba(62,78,78,0.7) " onclick="$('#overlay_ul').click();event.preventDefault(); return false;">
+<img src="http://res.188xi.com/images/09.png" style="width:260px;"></li>
+
+</ul>
+<script type="text/javascript">
+(function(window){
+document.addEventListener('DOMContentLoaded', function(){
+var PhotoSwipe = window.Code.PhotoSwipe;
+var options = {loop:false},
+// instance = PhotoSwipe.attach( window.document.querySelectorAll('#ul_pic li a'), options );
+instance = PhotoSwipe.attach( window.document.querySelectorAll('#tab_img_list li a'), options );
+}, false);
+})(window);
+</script>
+<script type="text/javascript">
+
+
+
+function show(i){
+$("#overlay_ul>li").removeClass("on")[i].className = "on";
+$("#overlay_ul").addClass("on");
+}
+
+</script>
+
+<script>
+(function($){
+$(function(){
+$('.lazy_img').lazyload({effect: 'fadeIn'});
+});
+})(jQuery);
+</script>
+
+
+
+<script>
+$(function(){
+new Swipe(document.getElementById('banner_box'), {
+speed:500,
+auto:3000,
+callback: function(){
+var lis = $(this.element).next("ol").children();
+lis.removeClass("on").eq(this.index).addClass("on");
+}
+});
+});
+</script><!--showphp:default/xt/s4_21.php-->
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+
+
+<script type="text/javascript">
+
+ // 微信配置
+
+ wx.config({
+
+     debug: false, 
+
+     appId: "wx17a83229adc061a2", 
+
+     timestamp: '1455088679', 
+
+     nonceStr: 'vo3QJ5YS1J', 
+
+     signature: '2061794d809d53fcb6d011161e965b137055dede',
+
+     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ'] 
+
+ }); 
+
+// config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在 页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready 函数中。
+
+ wx.ready(function(){
+
+     // 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+
+     wx.onMenuShareTimeline({
+
+         title: '我们结婚啦!', // 分享标题
+
+         link: 'http://www.188xi.com/index.php?ac=show&mod=3&id=10161&n=',
+
+         imgUrl: 'http://7sbkee.com1.z0.glb.clouddn.com/images/wicon.gif?imageMogr2/thumbnail/!500x500r/gravity/Center/crop/500x500' // 分享图标
+
+     });
+
+     // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+
+     wx.onMenuShareAppMessage({
+
+         title: '我们结婚啦!', // 分享标题
+
+         desc: '2016年01月01日 18时00分 南京大饭店 果然 & 桃子 诚邀', // 分享描述
+
+         link: 'http://www.188xi.com/index.php?ac=show&mod=3&id=10161&n=',
+
+         imgUrl: 'http://7sbkee.com1.z0.glb.clouddn.com/images/wicon.gif?imageMogr2/thumbnail/!500x500r/gravity/Center/crop/500x500', // 分享图标
+
+         type: 'link', // 分享类型,music、video或link，不填默认为link
+		 
+		 success: function () { 
+        	      	}
+
+
+     });
+	
+	
+	wx.onMenuShareQQ({
+    title: '我们结婚啦!', // 分享标题
+    desc: '2016年02月23日 12时00分 乌兰察布市盟宾馆 黄严 & 石佳 诚邀', // 分享描述
+    link: 'http://www.188xi.com/index.php?ac=show&mod=3&id=10161&n=', // 分享链接
+    imgUrl: '1.jpg', 
+		 
+		 success: function () { 
+        	      	}
+});
+
+
+ });
+
+ </script>
+
+		<script type="text/javascript">
+
+
+		
+			var guideDiv;
+			/////addWinOnloadEvent(initGuideFunc);
+
+			function initGuideFunc(){
+				guideDiv = document.getElementById("wechatshareguide");
+					if (guideDiv.addEventListener) {
+						guideDiv.addEventListener("click", hideGuideFunc, false);
+					} else {
+						guideDiv.attachEvent('onclick', hideGuideFunc);
+					}
+			}
+			
+
+			function hideGuideFunc(){
+				guideDiv.style.display = 'none';
+			}
+			$(function() {
+				initGuideFunc();
+			});
+        </script>
+
+	<style>
+    #wechatshareguide{
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background:url("http://res.188xi.com/images/wechatshareguide.png") rgba(0,0,0,0.7) no-repeat 90% 10px;
+        background-size: 35%;
+        position: absolute;
+    position:fixed; right:0%; top:0%;_position:absolute;_top:expression(eval(document.documentElement.clientHeight+document.documentElement.scrollTop)); _left:expression(eval(document.documentElement.clientWidth+document.documentElement.scrollLeft));
+	z-index:99999;
+    
+    }
+    </style>
+    <div id="wechatshareguide" style="display:none;"></div>    
+
+<Div style="display:none">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?944cf11a9b43f7fdfa55c4e03dacbd09";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</Div><!--PC版始终显示试用提醒--></body>
+</html>
