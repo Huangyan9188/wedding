@@ -1,0 +1,405 @@
+/* 版权所有：一生一世微喜帖（http://www.xitie.net.cn）*/
+article,aside,details,footer,header,nav,section {
+	display: block
+}
+
+html,body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,label,textarea,p {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none
+}
+
+body {
+	font: 400 14px/1.5 Arial
+}
+
+a {
+	text-decoration: none;
+	color: #666
+}
+
+em,i {
+	font-style: normal
+}
+
+img {
+	border: none;
+	vertical-align: middle
+}
+
+ol,ul {
+	list-style: none
+}
+
+input[type=text],input[type=password],input[type=number],input[type=email],input[type=search],input[type=tel] {
+	vertical-align: middle;
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-user-select: text
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+	color: #9e9e9e
+}
+
+select {
+	outline: 0;
+	-webkit-appearance: none
+}
+
+textarea {
+	font-size: 15px;
+	border: 1px solid #d7d7d7;
+	outline: 0;
+	-webkit-user-select: text
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.mt10 {
+	margin-top: 10px
+}
+
+.mb10 {
+	margin-bottom: 10px
+}
+
+.ml10 {
+	margin-left: 10px
+}
+
+.mr10 {
+	margin-right: 10px
+}
+
+.r3 {
+	-webkit-border-radius: 3px;
+	border-radius: 3px
+}
+
+.r50 {
+	-webkit-border-radius: 50%;
+	border-radius: 50%
+}
+
+.none {
+	display: none!important
+}
+
+.userselect {
+	-webkit-user-select: text
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+	visibility: hidden
+}
+
+.flex_col_box {
+	display: -webkit-box
+}
+
+.flex_col_box .flex_col {
+	-webkit-box-flex: 1
+}
+
+body {
+	background:#70D1C8 url(images/23_bg.png) top no-repeat;
+	background-size: 100% auto;
+	color: #666;
+}
+
+* {
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-ms-touch-action: none;
+	-webkit-touch-callout: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+.main{
+    position:relative;
+	padding-top:153px;
+}
+.nav_top {
+	width: 100%;
+	position:absolute;
+	top:5px;
+	right:20px;
+}
+.nav_top label{
+	display: block;
+	float: right;
+	margin: 20px 20px 0px 0px;
+	width: 33px;
+	height: 33px;
+	background: url(images/23_music_off.png);
+	background-size:33px auto;
+	cursor:pointer;
+	-webkit-tap-highlight-color:raba(0,0,0,0);
+}
+.nav_top label.on{
+	background: url(images/23_music_on.png);
+	background-size:33px auto;
+}
+.avatar{
+    display:block;
+	clear: both;
+	width: 299px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.avatar_in{
+    display:block;
+	height:290px;
+	background: url(images/23_avatar.png) no-repeat;
+	background-size:294px auto;
+}
+/**/
+.info_area{
+    clear:both;
+	width:320px;
+	margin:0px auto;
+	padding:10px 0px 15px 0px;
+	background-position:center top;
+	background-size:76% auto;
+}
+.marry_title{
+    clear:both;
+	width:215px;
+	height:50px;
+	margin:20px auto;
+	background: url(images/23_marry_tit.png) no-repeat;
+	background-size: 215px auto;
+}
+.marry_title02{
+    clear:both;
+	width:133px;
+	height:65px;
+	margin:0px auto;
+	background: url(images/23_marry_tit02.png) no-repeat;
+	background-size: 133px auto;
+}
+.name_box{
+    width:224px;
+	height:30px;
+	line-height:30px;
+	font-size:20px;
+	color:#333;
+	margin:20px auto;
+	text-align:center;
+}
+.name_box .love{
+    position:relative;
+    display:inline-block;
+	top:7px;
+	width:22px;
+	height:17px;
+	background: url(images/23_love.png) no-repeat;
+	background-size: 20px auto;
+}
+.ul_item{
+    clear:both;
+	width:90%;
+	margin:10px auto 10px auto;
+	
+}
+.ul_item li{
+    height:37px;
+	line-height:37px;
+	font-size:18px;
+	text-overflow:ellipsis; white-space:nowrap;
+	color:#fff;
+	text-align:center;
+}
+.ul_item li a{
+	color:#fff;
+}
+.split_box{
+    clear:both;
+	width:270px;
+	height:39px;
+	background:url(images/23_split_bg.png) no-repeat;
+	background-size: 270px auto;
+	margin:0px auto;
+}
+.split_box02{
+    clear:both;
+	width:100%;
+	height:19px;
+	line-height:19px;
+	margin:10px auto;
+	text-align:center;
+}
+.split_box02 a{
+    color:#333;
+}
+
+/**/
+.tab_pic{
+	border-collapse:separate;
+}
+.tab_pic img{
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.ul_pic {
+    width: 100%;
+    padding: 5px 0px;
+    overflow: hidden;
+	margin:0px auto;
+}
+
+.ul_pic li {
+    float: left;
+    width: 50%;
+    text-align: center;
+	margin:0px auto;
+
+}
+.ul_pic a img{
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10%;
+}
+
+/**/
+.word_box{
+	position: relative;
+	width:275px;
+	height:211px;
+	padding: 70px 15px 15px 25px;
+	margin: 10px auto 10px auto;
+	background: url(images/23_word.png) no-repeat;
+	background-size:275px auto;
+}
+.word_box span{
+	color: #fff;
+	line-height: 14px;
+	font-size: 14px;
+}
+.countdown{
+    position:relative;
+	bottom:-6px;
+	line-height:25px;
+	color:#fff;
+	text-align:center;
+}
+.countdown i{
+    position:relative;
+    display:inline-block;
+    width:15px;
+	height:15px;
+	background: url(images/23_countdown.png) no-repeat;
+	background-size: 15px auto;
+	top:3px;
+	margin-right:10px;
+}
+.countdown #day_num{
+    font-weight:bold;
+	padding:0px 2px;
+}
+
+.create_box{
+	width: 308px;
+	height: 36px;
+	line-height: 36px;
+	background: url(images/23_btn_create.png) no-repeat;
+	background-size:308px auto;
+	margin: 20px auto 10px auto;
+	text-align: center;
+}
+.create_box a{
+	display: inline-block;
+	width: 308px;
+	height: 36px;
+	color:#333;
+	font-family:'microsoft yahei';
+	font-size:16px;
+	font-weight:bold;
+}
+/**/
+.ul_bottom{
+	padding:0px 10%;
+}
+.nav_bottom {
+    width: 100%;
+    padding: 10px 0px;
+    overflow: hidden;
+	margin:0px auto;
+}
+
+.nav_bottom li {
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+}
+.nav_bottom a{
+	display: inline-block;
+    width: 61px;
+    background: url(images/23_btn_footer.png) no-repeat;
+    background-size:183px auto;
+    padding: 71px 0px 0px 0px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.nav_bottom a.fy{
+    background-position: 0px 0px;
+}
+.nav_bottom a.zf{
+    background-position: -61px 0px;
+}
+.nav_bottom a.share{
+    background-position: -122px 0px;
+}
+.nav_bottom a span{
+	display: block;
+	font-size: 14px;
+}
+/**/
+.tab_img_list{
+	width:100%;
+	border-collapse:collapse;
+	margin: 15px 0px 15px 0px;
+}
+.tab_img_list td{
+	vertical-align:top;
+	width:50%;
+}
+.tab_img_list a{
+	display: block;
+	padding: 2px 2px 2px 2px;
+}
+.tab_img_list img{
+	width: 100%;
+	min-height:150px;
+	/*border:none;*/
+	border-radius: 5px;
+}
+/**/
+.video{
+	display: block;
+	padding-bottom: 15px;
+}
+.video img{
+	border-radius: 5px;
+}
