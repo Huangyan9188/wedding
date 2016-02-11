@@ -254,21 +254,21 @@ lis.removeClass("on").eq(this.index).addClass("on");
 
  // 微信配置
 
- wx.config({
+ // wx.config({
 
-     debug: false, 
+ //     debug: false, 
 
-     appId: "wx17a83229adc061a2", 
+ //     appId: "wx17a83229adc061a2", 
 
-     timestamp: '1455088679', 
+ //     timestamp: '1455088679', 
 
-     nonceStr: 'vo3QJ5YS1J', 
+ //     nonceStr: 'vo3QJ5YS1J', 
 
-     signature: '2061794d809d53fcb6d011161e965b137055dede',
+ //     signature: '2061794d809d53fcb6d011161e965b137055dede',
 
-     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ'] 
+ //     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ'] 
 
- }); 
+ // }); 
 
 // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在 页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready 函数中。
 
@@ -279,7 +279,7 @@ lis.removeClass("on").eq(this.index).addClass("on");
      wx.onMenuShareTimeline({
 
          title: '我们结婚啦!', // 分享标题
-
+         desc: '2016年02月23日 12时00分 乌兰察布市盟宾馆 黄严 & 石佳 诚邀',
          link: 'http://wedding.huangyan9188.com',
 
          imgUrl: '1.jpg' // 分享图标
